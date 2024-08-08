@@ -1,0 +1,21 @@
+.footer-container{
+    margin-top: 305px;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(240, 100%, 50%);
+}
+.atendimento{
+    color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+
+    p{
+        font-weight: bold;
+        border-bottom: 1px solid #ddd;
+    }
+
+    span{
+        line-height: 2;
+        font-size: 14px;
+    }
+}
