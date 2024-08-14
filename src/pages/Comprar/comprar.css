@@ -1,0 +1,116 @@
+.comprar-container {
+    padding: 100px 20px;
+    background-color: #2e3238;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comprar-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.comprar-form label {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.comprar-form ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.comprar-input {
+    background-color: #3a3f47;
+    border: none; 
+    border-bottom: 2px solid #ccc;
+    color: #FFFFFF;
+    width: 100%;
+    line-height: 40px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    transition: border-color 0.3s ease;
+}
+
+.comprar-input:focus {
+    outline: none;
+    border-bottom-color: #549CFF;
+}
+
+.comprar-tabela-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #101010;
+    padding: 8px; 
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center; 
+    text-align: center;
+}
+
+.comprar-tabela-label {
+    color: #BBBBBB;
+    font-size: 13px;
+}
+
+.comprar-tabela-section ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; 
+}
+
+.comprar-tabela-section ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.comprar-tabela-section ul li:last-child {
+    border-bottom: none;
+}
+
+.comprar-tabela-section span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 1.4;
+}
+
+.comprar-btn {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #549CFF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.comprar-btn:hover {
+    background-color: #4287e5;
+}

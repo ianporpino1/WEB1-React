@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './authHeader.css'
 
 function AuthHeader() {
   return (

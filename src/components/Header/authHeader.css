@@ -1,0 +1,12 @@
+.cabecalho{
+    background-color: hsl(240, 100%, 50%);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h1{
+        color: white;
+    }
+}

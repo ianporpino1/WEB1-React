@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Cadastro.css';
+import './cadastro.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { User } from '../../models/models'
 import { getUsers, addUser } from '../../services/UserService'
@@ -24,7 +24,7 @@ function Form() {
   });
 
   const [message, setMessage] = useState('');
-  const navigate = useNavigate(); // Hook para navegação
+  const navigate = useNavigate(); 
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -35,7 +35,7 @@ function Form() {
   };
 
   const validateAndRegister = async (email, password, cpf) => {
-    setMessage(''); // Limpa a mensagem anterior
+    setMessage(''); 
 
     try {
       const users = await getUsers();
@@ -61,7 +61,7 @@ function Form() {
       });
 
       await addUser(user);
-      navigate('/login'); // Redireciona para a página de login
+      navigate('/login');
     } catch (error) {
       setMessage('Erro: ' + error.message);
     }
