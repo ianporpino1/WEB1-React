@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Cadastro from '../pages/Cadastro/Cadastro';
 import Home from '../pages/Home/Home';
 import Comprar from '../pages/Comprar/Comprar';
@@ -17,6 +17,7 @@ export const router = createBrowserRouter([
         path: '/',
         element: <DefaultLayout />, 
         children: [
+          { index: true, element: <Navigate to="/login" /> },
           { path: 'home', element: <Home /> },
           { path: 'comprar', element: <Comprar /> },
           { path: 'vender', element: <Vender /> },
